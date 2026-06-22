@@ -34,6 +34,18 @@ uv build
 > [!IMPORTANT]
 > Run `uv sync` after pulling changes to update dependencies.
 
+## CUDA Device
+
+Use the following CUDA device for all local runs in this repository:
+
+- `CUDA_VISIBLE_DEVICES="MIG-d0fbfca0-ff07-53d8-adac-816d1358f255"`
+
+When running commands in a shell, set it like this:
+
+```bash
+export CUDA_VISIBLE_DEVICES="MIG-d0fbfca0-ff07-53d8-adac-816d1358f255"
+```
+
 ## Code Quality
 
 **Linting & Formatting:** All code must pass pre-commit checks. See **[Code Quality and Linting](CONTRIBUTING.md#code-quality-and-linting)** in CONTRIBUTING.md for setup and details.
